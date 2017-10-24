@@ -44,4 +44,4 @@ def parseTerm(trm):
 
 #if __name__ == "__main__": #moreeee debug testing
 	#define("cow")
-	#example("anime")
+	#example("cow")
