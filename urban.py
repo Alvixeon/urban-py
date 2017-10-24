@@ -16,7 +16,7 @@ def define(trm):
 	final = tree.xpath('//*[@id="content"]/div[1]/div[3]//text()')
 	
 	if "Define it!" in final:
-		print ("[*] This term does not appear to exist on the urbandictionary site, please try a different string")
+		return "[*] This term does not appear to exist on the urbandictionary site, please try a different string"
 	else:
 		finstr = ''.join(final)
 		#print (trm + " - " + finstr) debug testing
@@ -30,7 +30,7 @@ def example (ex):
 	final = tree.xpath('//*[@id="content"]/div[1]/div[4]//text()')
 		
 	if "Define it!" in final:
-		print ("[*] This term does not appear to exist on the urbandictionary site, please try a different string")
+		return "[*] This term does not appear to exist on the urbandictionary site, please try a different string"
 	else:
 		finstr = ''.join(final)
 		#print ("Ex: " + finstr) debug testing
